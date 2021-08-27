@@ -1,0 +1,16 @@
+$str = "Some string values";
+
+ function something($str)
+       {
+           $N = strlen($str);
+    
+           for ($i = 0; $i < $N; $i++) {
+               if ($str[$i] === "a" || $str[$i] === "e" || $str[$i] === "i" || $str[$i] === "o" || $str[$i] === "u") {
+                   print(strtoupper($str[$i]));
+               } else {
+                   print($str[$i]);
+               }
+           }
+       }
+       
+ something($str);      
